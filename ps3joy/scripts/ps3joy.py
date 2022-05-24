@@ -151,8 +151,8 @@ class decoder:
         #       uinput.ABS_HAT0Y, uinput.ABS_HAT1Y, uinput.ABS_HAT2Y, uinput.ABS_HAT3Y,
         #       uinput.ABS_TILT_X, uinput.ABS_TILT_Y, uinput.ABS_MISC, uinput.ABS_RZ,
         #       ]
-        buttons = range(0x100, 0x111)
-        axes = range(0, 20)
+        buttons = list(range(0x100, 0x111))
+        axes = list(range(0, 20))
         axmin = [0] * 20
         axmax = [255] * 20
         axfuzz = [2] * 20
